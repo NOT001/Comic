@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#855959">
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_person_24"
+            app:tint="#C1AAAA" />
+
+        <EditText
+            android:id="@+id/timkiem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_edt"
+            android:gravity="center"
+            android:hint="Search truyện"
+            android:textColorHint="#AEE6DBDB"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+
+            android:onClick="update"
+            android:padding="10dp"
+            android:src="@drawable/ic_home"
+            app:tint="#C1AAAA" />
+
+    </RelativeLayout>
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center" />
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#B38787"
+        android:backgroundTint="#B18C8C"
+        android:title="Danh Sách Truyện"
+        android:titleTextColor="#344B73" />
+
+    <GridView
+        android:id="@+id/DStruyen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:background="#433939">
+
+    </GridView>
+
+
+
+</LinearLayout>
